@@ -7,10 +7,20 @@ public class ProblemSet {
 
 
     public static double average(ArrayList<Double> numbers) {
+        if(!numbers.isEmpty()) {
+            double total = 0.0;
+            int count = 0;
+            for(int i=0;i< numbers.size();i++){
+                total += numbers.get(i);
+                count++;
+            }
+            return total/count;
+        }
         return 0.0;
 
         // TODO: Implement this method to return the average of all the numbers in the input ArrayList
         //       If the ArrayList is empty, return 0.0
+
         //
         // Examples
         // [1.0,2.0,3.0] returns 2.0
@@ -28,6 +38,8 @@ public class ProblemSet {
     // 123 returns 6
     // 57 returns 12
     // -36 returns 9
+
+
 
 
     // TODO: Write a public static method named bestKey that takes a HashMap of String to Integer

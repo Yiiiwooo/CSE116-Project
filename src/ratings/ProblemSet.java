@@ -39,7 +39,13 @@ public class ProblemSet {
     // 57 returns 12
     // -36 returns 9
     public static int sumOfDigits(int numbers){
-        return 0;
+        int sum = 0;
+        numbers = Math.abs(numbers);
+        for(int i =0;i< numbers;i = 0){
+            sum += numbers%10;
+            numbers = numbers/10;
+        }
+        return sum;
     }
 
 
@@ -53,7 +59,16 @@ public class ProblemSet {
     // {"cat": 5, "dog": 5, "fox": 4} can return either "cat" or "dog"
     // {} returns ""
     public static String bestKey(HashMap<String,Integer> key){
-        return "";
+        String name = "";
+        int max = Integer.MIN_VALUE;
+            for(String aaa : key.keySet()){
+                if(key.get(aaa)>max){
+                    max = key.get(aaa);
+                    name = aaa;
+                }
+
+            }
+        return name;
     }
 
 }

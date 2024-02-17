@@ -67,12 +67,12 @@ public class TestProblemSet {
         ts2.put("DOG",5);
         ts2.put("FOX",4);
         ts3.put("QWQ",-8);
-        ts3.put("QVQ",2);
-        ts3.put("QAQ",7);
+        ts3.put("QVQ",-2);
+        ts3.put("QAQ",-7);
 
         assertEquals("CSE",ProblemSet.bestKey(ts1));
         assertTrue(ProblemSet.bestKey(ts2).equals("CAT") || ProblemSet.bestKey(ts2).equals("DOG"));
-        assertEquals("QAQ",ProblemSet.bestKey(ts3));
+        assertEquals("QVQ",ProblemSet.bestKey(ts3));
         assertEquals("",ProblemSet.bestKey(ts4));
 
 

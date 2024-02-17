@@ -38,7 +38,9 @@ public class ProblemSet {
     // 123 returns 6
     // 57 returns 12
     // -36 returns 9
-
+    public static int sumOfDigits(int numbers){
+        return 0;
+    }
 
 
 
@@ -50,5 +52,8 @@ public class ProblemSet {
     // {"CSE": 100, "MTH": 90, "MGT": 10} returns "CSE"
     // {"cat": 5, "dog": 5, "fox": 4} can return either "cat" or "dog"
     // {} returns ""
+    public static String bestKey(HashMap<String,Integer> key){
+        return "";
+    }
 
 }

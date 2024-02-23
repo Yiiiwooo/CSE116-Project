@@ -4,8 +4,7 @@ public class Rating {
     private String reviewerID;
     private int reviewerRating;
     public Rating(String reviewerID,int reviewerRating ){
-
-
+        this.reviewerID = reviewerID;
 
         if(reviewerRating<1 || reviewerRating>5){
             this.reviewerRating = -1;

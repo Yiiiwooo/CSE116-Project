@@ -20,7 +20,7 @@ public class Song {
         this.artist = artist;
     }
     public String getSongID(){
-        return this.artist;
+        return this.ID;
     }
     public void setSongID(String ID){
         this.ID = ID;

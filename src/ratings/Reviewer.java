@@ -3,6 +3,7 @@ package ratings;
 public class Reviewer {
     private String reviewerID;
     public Reviewer(String reviewerID){
+        this.reviewerID = reviewerID;
 
     }
     public String getReviewerID(){

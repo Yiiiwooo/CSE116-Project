@@ -6,8 +6,6 @@ import ratings.Rating;
 import ratings.Reviewer;
 import ratings.Song;
 
-import java.util.HashMap;
-
 public class TestClasses1 {
     public boolean compareSongs(Song s1, Song s2){
         if(s1.getArtist().equals(s2.getArtist()) && s1.getTitle().equals(s2.getTitle()) && s1.getSongID().equals(s2.getSongID())){
